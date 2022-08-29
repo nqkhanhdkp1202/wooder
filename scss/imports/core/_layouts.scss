@@ -1,0 +1,67 @@
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    box-sizing: border-box;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+html,
+body {
+    width: 100%;
+    max-width: $max-width;
+    -webkit-font-smoothing: antialiased;
+    margin: auto;
+    background: $main-bg-cl;
+    position: relative;
+    scroll-behavior: smooth;
+    font-family: "pr";
+    font-size: 14px;
+    --pd-section: 90px;
+    main {
+        width: 100%;
+        margin: auto;
+        .pd {
+            padding: var(--pd-section) 0;
+        }
+    }
+    @include customscrollbar;
+}
+
+.container {
+    max-width: $container-width;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+}
+
+.container-fluid {
+    max-width: 1540px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 30px;
+}
+
+@media (min-width: $xxs-min) {
+    .container {
+        max-width: 540px;
+    }
+}
+@media (min-width: $xs-min) {
+    .container {
+        max-width: 720px;
+    }
+}
+@media (min-width: $sm-min) {
+    .container {
+        max-width: 960px;
+    }
+}
+@media (min-width: $md-min) {
+    .container {
+        max-width: $container-width;
+    }
+}

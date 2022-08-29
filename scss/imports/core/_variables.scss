@@ -1,0 +1,43 @@
+// Colors
+$white-cl: #fff;
+$black-cl: #000;
+
+$yellow-cl: #bea67c;
+
+// global text color
+$text-cl: #010101;
+$desc-cl: #464646;
+$gray-cl: #636262;
+
+// global bg color
+$main-bg-cl: #fff;
+
+// transition
+$t: 0.3s;
+$cubic: cubic-bezier(0.08, 0.47, 0.81, 0.61);
+
+// font families
+$font-stack: "Open Sans", sans-serif;
+
+// GRID - media queries breakpoints
+/*GRID - media queries breakpoints*/
+$xxs-min: 576px; // CÓ THỂ TÙY CHỈNH
+$xs-min: 768px; // KHÔNG THAY ĐỔI
+$sm-min: 992px; // KHÔNG THAY ĐỔI
+$md-min: 1200px; // KHÔNG THAY ĐỔI
+$lg-min: 1600px; // CÓ THỂ TÙY CHỈNH
+
+$xxs-max: ($xxs-min - 1); // Small Mobile
+$xs-max: ($xs-min - 1); // Mobile
+$sm-max: ($sm-min - 1); // Tablet
+$md-max: ($md-min - 1); // Desktop
+$lg-max: ($lg-min - 1); // Large Desktop
+
+// Boxed layout
+$max-width: 1600px;
+$container-max-width: 100%;
+$container-width: 1010px;
+// Height
+:root {
+    --header-h: 80px;
+}

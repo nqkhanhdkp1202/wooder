@@ -1,0 +1,66 @@
+.btnmain {
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:hover {
+        transition: $t $cubic;
+        cursor: pointer;
+    }
+}
+.textbox {
+    position: relative;
+    .btnlearn {
+        font-family: "pb";
+        color: $black-cl;
+        font-size: 14px;
+        line-height: 58px;
+        letter-spacing: 0.2em;
+        position: relative;
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: -7px;
+            left: 0;
+            width: 37px;
+            height: 2px;
+            background-color: $yellow-cl;
+        }
+    }
+}
+
+.textbox {
+    .heading {
+        font-family: "pb";
+        font-size: 40px;
+        line-height: 84px;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        margin-bottom: -6px;
+    }
+    .desc {
+        font-family: "pr";
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.025em;
+        margin-bottom: 4px;
+        color: $desc-cl;
+    }
+
+    // .btnmain {
+    //     i {
+    //         margin-left: 10px;
+    //     }
+
+    //     &::after {
+    //         content: "";
+    //         display: block;
+    //         position: absolute;
+    //         bottom: -7px;
+    //         left: 0;
+    //         width: 37px;
+    //         height: 2px;
+    //         background-color: $yellow-cl;
+    //     }
+    // }
+}
